@@ -67,10 +67,10 @@ if var1 == 1 :
     time.sleep(1)
     if answers[i] == correct_answers[i]:
       print("Q"+str(i+1)+".", end = " ")
-      time.sleep(3)
+      time.sleep(2)
       print("✓")
     else:
       print("Q"+str(i+1)+".", end=" ")
-      time.sleep(3)
+      time.sleep(2)
       print("X")
 
