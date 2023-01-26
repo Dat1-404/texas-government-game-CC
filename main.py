@@ -37,7 +37,7 @@ if var1 == 1 :
     if answer == "2" :
       score = score + 1
     answers.append(answer)
-    answer = input("Question 4: What country did the United States gain it's independence from?\n1. Great Britain\n2. France\n3. Portugal\n4. Spain\n")
+    answer = input("Question 4: What country did the United States gain its independence from?\n1. Great Britain\n2. France\n3. Portugal\n4. Spain\n")
     if answer == "1" :
       score = score + 1
     answers.append(answer)
@@ -65,22 +65,34 @@ if var1 == 1 :
     if answer == "4" :
       score = score + 1
     answers.append(answer)
-    input("Press ENTER to see your results. You do not need to press ENTER while we're revealing it.")
+    choice = input("Press ENTER to see your results. You do not need to press ENTER while we're revealing it. (Also, enter 1 to skip the animation and get instant results)\n")
     correct_answers = ["3", "4", "2", "1", "2", "1", "2", "1", "3", "4"]
-    for i in range(len(answers)):
-      time.sleep(1)
-      if answers[i] == correct_answers[i]:
-        print("Q"+str(i+1)+".", end = " ")
-        time.sleep(2)
-        print("✓")
-      else:
-        print("Q"+str(i+1)+".", end=" ")
-        time.sleep(2)
-        print("X")
     grade = score * 10
-    print("Your grade is...",end=" ")
-    time.sleep(2)
-    print(str(grade)+"%!")
+    if choice == "1" :
+      for i in range(len(answers)):
+        if answers[i] == correct_answers[i]:
+          print("Q"+str(i+1)+".", end = " ")
+          print("✓")
+        else:
+          print("Q"+str(i+1)+".", end=" ")
+          print("X")
+      print("Your grade is...",end=" ")
+      print(str(grade)+"%!")
+    else :
+      for i in range(len(answers)):
+        time.sleep(1)
+        if answers[i] == correct_answers[i]:
+          print("Q"+str(i+1)+".", end = " ")
+          time.sleep(2)
+          print("✓")
+        else:
+          print("Q"+str(i+1)+".", end=" ")
+          time.sleep(2)
+          print("X")
+      grade = score * 10
+      print("Your grade is...",end=" ")
+      time.sleep(2)
+      print(str(grade)+"%!")
     if grade >= 60 :
       input("You passed! Congratulations! Press ENTER to continue.")
       questions = False
@@ -98,16 +110,16 @@ if var1 == 1 :
   input("You also notice that you pay a tax for everything you own, such as your house and vehicles.")
   input("This is called property tax.")
   input("Finally, you pay another tax called the Social Security tax.")
-  input("This goes towards the community so people could go into retirement.")
+  input("This goes towards the community. For example, this tax allow people to go into retirement.")
   input("All these taxes go towards the federal government to help fund public services.")
   input("November, 2024")
   input("There is a presidential election! There are two candidates, Joseph Biden and Donald Trump.")
   input("Joseph Biden: The current president. He has showed that he cares for climate change but handled political affairs poorly. Biden has a low approval rate.")
   input("Donald Trump: Has handled political affairs really well. He established relations with Vladamir Putin, president of Russia, and Kim Jong Un, president of North Korea. However, he has been impeached many times.")
-  president = input("Who do you vote for?\n1. Joseph Biden\n2. Donald Trump\n")
+  president = int(input("Who do you vote for?\n1. Joseph Biden\n2. Donald Trump\n"))
   if president == 1 :
     input("Congratulations! You were the tiebreaker! Joesph Biden is the new president.")
-  if president == 2 :
+  elif president == 2 :
     input("Congratulations! You were the tiebreaker! Donald Trump is the new president.")
   else :
     input("It ended in a tie. There was a new vote and Donald Trump ended up winning.")
@@ -121,3 +133,13 @@ if var1 == 1 :
   input("Second Amendment: Protects the right to bear arms for self defense.")
   input("The Second Amendment has become higlhy controversial recently because people are using weapons for actions other than self defense.")
   input("Third Amendment: prevents the government form forcing you out of your home. The British did this in the Revolutonary War.")
+  input("Fourth Amendment: prevents the government from unreasonable search and seizure of a person. The government would need a search warrant to do this.")
+  input("Fifth Amendment: Provides protection for those charged with crimes. Specifically, people charged with a serious crime (felony) must be started by a grand jury. A person cannot be charged twice for the same offense or have property taken away without only compensation. A person cannot say anything self-incriminating and cannot be imprisoned without fair procedures and trials.")
+  input("Sixth Amendment: Provides more protections for those who were charged with crimes. It grants the right to a speedy and public trial, trial by an impartial jury, and to be informed of criminal charges. The witness must face the accused, and the accused has the right of their own witnesses and the right to be represented by a lawyer.")
+  input("Seventh Amendment: In Federal civil cases, this amendment extends the right to a jury trial.")
+  input("Eighth Amendment: Bans excessive bail and fines and cruel and unusual punishment.")
+  input("Ninth Amendment: says that listing certain rights in the Constitution does not mean that people don't have other rights that haven't been spelled out.")
+  input("Tenth Amendment: says that the Federal Government only has those powers given in the Constitution. If it isn't listed, it belongs to the state or the people.")
+  input("These are all the amendments in the Bill of Rights.")
+  input("Time for a game.")
+  input("This is how to play. I will give you a scenario and you will say if it is with or against the Constitution.")
