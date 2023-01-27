@@ -143,3 +143,60 @@ if var1 == 1 :
   input("These are all the amendments in the Bill of Rights.")
   input("Time for a game.")
   input("This is how to play. I will give you a scenario and you will say if it is with or against the Constitution.")
+  input("Respond with 1 if it goes with the Constitution and 2 if not.")
+  answers = []
+  score = 0
+  answer = input("1: Protesting for civil rights.")
+  if answer == "1" :
+    score = score + 1
+  answers.append(answer)
+  answer = input("2: Burning down a building and breaking down windows as an act of protest.")
+  if answer == "2" :
+    score = score + 1
+  answers.append(answer)
+  answer = input("3: Getting prison for life for stealing.")
+  if answer == "2" :
+    score = score + 1
+  answers.append(answer)
+  answer = input("4: Bearing arms for self defense.")
+  if answer == "1" :
+    score = score + 1
+  answers.append(answer)
+  answer = input("5: The police searching your home for no reason.")
+  if answer == "2" :
+    score = score + 1
+  answers.append(answer)
+  correct_answers = ["1", "2", "2", "1", "2"]
+  choice = input("Press ENTER to see your results. You do not need to press ENTER while we're revealing it. (Also, enter 1 to skip the animation and get instant results)\n")
+  grade = score * 20
+  if choice == "1" :
+    for i in range(len(answers)):
+      if answers[i] == correct_answers[i]:
+        print("Q"+str(i+1)+".", end = " ")
+        print("✓")
+      else:
+        print("Q"+str(i+1)+".", end=" ")
+        print("X")
+    print("Your grade is...",end=" ")
+    print(str(grade)+"%!")
+  else :
+    for i in range(len(answers)):
+      time.sleep(1)
+      if answers[i] == correct_answers[i]:
+        print("Q"+str(i+1)+".", end = " ")
+        time.sleep(2)
+        print("✓")
+      else:
+        print("Q"+str(i+1)+".", end=" ")
+        time.sleep(2)
+        print("X")
+    print("Your grade is...",end=" ")
+    time.sleep(2)
+    print(str(grade)+"%!")
+    input("OBJECTIVE 3 COMPLETED")
+    input("PART 1 COMPLETE")
+    input("Part 2: Government Official")
+    input("Scenario: You are a government official hoping to become president. You must climb up the ranks, starting from local government.")
+    input("Objectives:\n1. Become president")
+    input("You successfully got elected mayor of Houston. You will need to provide public services to your municipality.")
+    input("The Houston government is mayor-council")
