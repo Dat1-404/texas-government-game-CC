@@ -193,10 +193,25 @@ if var1 == 1 :
     print("Your grade is...",end=" ")
     time.sleep(2)
     print(str(grade)+"%!")
-    input("OBJECTIVE 3 COMPLETED")
-    input("PART 1 COMPLETE")
+  input("OBJECTIVE 3 COMPLETED")
+  input("PART 1 COMPLETE")
+  part2 = True
+  while part2 == True :
     input("Part 2: Government Official")
     input("Scenario: You are a government official hoping to become president. You must climb up the ranks, starting from local government.")
     input("Objectives:\n1. Become president")
     input("You successfully got elected mayor of Houston. You will need to provide public services to your municipality.")
-    input("The Houston government is mayor-council")
+    input("The Houston government is mayor-council.")
+    input("The council is legislative and the mayor is executive.")
+    input("This means that the council passes laws and the mayor enforces them.")
+    input("One day, the United States declared war on Russia and China after the Russia-Ukraine conflict escalated.")
+    input("Protests erupted across Houston against the war.")
+    input("The anti-war movement quickly developed from a peaceful protest to a very violent protest.")
+    input("Many people were damaging the Houston City Hall, which is against the law.")
+    answer = ("What do you do?\n1. Send a police force to stop the protest.\n2. Nothing")
+    if answer == "1" :
+      input("You successfully stopped the protest. The police force arrested about 20 people that were damaging the city hall, and they were charged with crimes.")
+      input("The United States and its allies won the war, turning the nationwide protests to a wave of celebration.")
+      input("This led to the end of China's communist government and the end of the Russia-Ukraine conflict.")
+    if answer == "2" :
+      input("You did nothing to stop the protests. As people cheered, the City Hall fell, just like your dreams of becoming president.")
