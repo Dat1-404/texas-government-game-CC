@@ -116,14 +116,16 @@ if var1 == 1 :
   input("There is a presidential election! There are two candidates, Joseph Biden and Donald Trump.")
   input("Joseph Biden: The current president. He has showed that he cares for climate change but handled political affairs poorly. Biden has a low approval rate.")
   input("Donald Trump: Has handled political affairs really well. He established relations with Vladamir Putin, president of Russia, and Kim Jong Un, president of North Korea. However, he has been impeached many times.")
-  president = int(input("Who do you vote for?\n1. Joseph Biden\n2. Donald Trump\n"))
-  if president == 1 :
+  president = input("Who do you vote for?\n1. Joseph Biden\n2. Donald Trump\n")
+  if president == "1" :
     input("Congratulations! You were the tiebreaker! Joesph Biden is the new president.")
-  elif president == 2 :
+    president == int(1)
+  elif president == "2" :
     input("Congratulations! You were the tiebreaker! Donald Trump is the new president.")
+    president == int(2)
   else :
     input("It ended in a tie. There was a new vote and Donald Trump ended up winning.")
-    president = 2  
+    president = int(2)  
   input("OBJECTIVE 2 COMPLETED")
   input("OBJECTIVE 3: KNOW YOUR RIGHTS")
   input("Your rights are listed in the United States Constitution. More specifically, the Bill of Rights.")
@@ -208,10 +210,26 @@ if var1 == 1 :
     input("Protests erupted across Houston against the war.")
     input("The anti-war movement quickly developed from a peaceful protest to a very violent protest.")
     input("Many people were damaging the Houston City Hall, which is against the law.")
-    answer = ("What do you do?\n1. Send a police force to stop the protest.\n2. Nothing")
+    answer = input("What do you do?\n1. Send a police force to stop the protest.\n2. Nothing\n")
     if answer == "1" :
       input("You successfully stopped the protest. The police force arrested about 20 people that were damaging the city hall, and they were charged with crimes.")
       input("The United States and its allies won the war, turning the nationwide protests to a wave of celebration.")
       input("This led to the end of China's communist government and the end of the Russia-Ukraine conflict.")
+      input("2 years later, the state elections take place.")
+      pp = input("What political party will you go for?\n1. Democratic\n2. Republican\n")
+      if pp == "1" :
+        print("You chose to run as a Democrat.")
+        pp = 1
+        pps = "Democrat"
+      if pp == "2" :
+        print("You chose to run as a Republican.")
+        pp = 2
+        pps = "Republican"
+      input("You ran in the election. People supported your decision to responsibly stop the protests in your city, and they voted for you. You now represent Texas as a "+pps+".")
+      input("As part of the Senate, you vote on whether or not you want a law to be passed based on your political beliefs.")
+      input("As you passed more laws, people started believing you would make a great president.")
+      input("2026 PRESIDENTIAL ELECTION")
     if answer == "2" :
       input("You did nothing to stop the protests. As people cheered, the City Hall fell, just like your dreams of becoming president.")
+      
+    
