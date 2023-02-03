@@ -4,7 +4,7 @@ That means that the game is played in a terminal or command line (cmd).
 To run the game, make sure you have Python installed.
 You can install it on the [Official Python Website](https://www.python.org/downloads/).
 You can also run the project on the project's [repl.it page](https://replit.com/@Dat1Programmer/Texas-Government-Game-CC-7th?v=1).
-Although you can simply copy the code and run it, there is also an exe file in the releases.
+Although you can simply copy the code and run it, there is also an exe file in the releases. You do not need to install python with the exe.
 
 ## How to play
 
