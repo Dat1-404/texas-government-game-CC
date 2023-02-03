@@ -4,8 +4,8 @@ print("Texas Government Game")
 time.sleep(1)
 print("The terminal game that was made because Pygame is too hard")
 time.sleep(1)
-var1 = int(input("Select an option:\n1. Play\n2. Credits\n"))
-if var1 == 1 :
+var1 = input("Select an option:\n1. Play\n2. Credits\n")
+if var1 == "1" :
   input("DON'T EXIT OUT! This game doesn't have a saving mechanism.")
   input("Part 1: Citizen")
   input("Scenario: You are a 20-year-old immigrant from Mexico.\nYou plan to gain citizenship through naturalization.")
@@ -148,23 +148,23 @@ if var1 == 1 :
   input("Respond with 1 if it goes with the Constitution and 2 if not.")
   answers = []
   score = 0
-  answer = input("1: Protesting for civil rights.")
+  answer = input("1: Protesting for civil rights.\n")
   if answer == "1" :
     score = score + 1
   answers.append(answer)
-  answer = input("2: Burning down a building and breaking down windows as an act of protest.")
+  answer = input("2: Burning down a building and breaking down windows as an act of protest.\n")
   if answer == "2" :
     score = score + 1
   answers.append(answer)
-  answer = input("3: Getting prison for life for stealing.")
+  answer = input("3: Getting prison for life for stealing.\n")
   if answer == "2" :
     score = score + 1
   answers.append(answer)
-  answer = input("4: Bearing arms for self defense.")
+  answer = input("4: Bearing arms for self defense.\n")
   if answer == "1" :
     score = score + 1
   answers.append(answer)
-  answer = input("5: The police searching your home for no reason.")
+  answer = input("5: The police searching your home for no reason.\n")
   if answer == "2" :
     score = score + 1
   answers.append(answer)
@@ -252,14 +252,23 @@ if var1 == 1 :
       input("Before we finish the game, I would like to review as this was a short part.")
       input("In most governements, including state and federal, there are three branches: Legislative, Executive, and Judicial.")
       input("Legislative passes laws, executive enforces them, and judicial makes sure that criminals get a proper punisment according to the Constitution.")
-      input("There are also local government who handle a specific area, such as public services and taxes in a county.")
+      input("There are also local governments who handle a specific area, such as public services and taxes in a county.")
       input("There are municipal governments, who have a legislative and executive branch (mayor-council) and there is also a council-manager government.")
       input("There is also county governments, which provide public services, collect taxes, etc.")
       input("There are many courts which are part of the Judicial Branch of the state or the federal government.")
       input("Well, this is the unit recapped in a game. Hope you enjoyed.")
       input("PART 2 COMPLETE")
       input("GAME COMPLETE")
+      part2 = False
     if answer == "2" :
       input("You did nothing to stop the protests. As people cheered, the City Hall fell, just like your dreams of becoming president.")
+if var1 == "2" :
+  print("CREDITS")
+  time.sleep(2)
+  print("Sources: Wikipedia, other websites")
+  time.sleep(2)
+  print("Error help: ChatGPT, WoC, Stack Overflow")
+  time.sleep(2)
+  input("Thanks for playing!")
       
     
