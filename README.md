@@ -2,9 +2,10 @@
 This game is a text adventure/terminal game.
 That means that the game is played in a terminal or command line (cmd).
 To run the game, make sure you have Python installed.
+To checkif you have Python installed, simply go into your command prompt and enter the command "python --version".
 You can install it on the [Official Python Website](https://www.python.org/downloads/).
 You can also run the project on the project's [repl.it page](https://replit.com/@Dat1Programmer/Texas-Government-Game-CC-7th?v=1).
-Although you can simply copy the code and run it, there is also an exe file in the releases. You do not need to install python with the exe.
+There is also a Windows-only exe file in the Releases.
 
 ## How to play
 
